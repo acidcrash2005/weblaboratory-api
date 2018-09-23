@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "",
+  "info": {
+    "name": "lesson",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "default": "",
+      "type": "string"
+    },
+    "text": {
+      "default": "",
+      "type": "text"
+    },
+    "course": {
+      "model": "course",
+      "via": "-"
+    }
+  }
+}

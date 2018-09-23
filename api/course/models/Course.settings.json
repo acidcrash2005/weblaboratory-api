@@ -1,0 +1,31 @@
+{
+  "connection": "default",
+  "collectionName": "course",
+  "info": {
+    "name": "course",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "default": "",
+      "type": "string"
+    },
+    "text": {
+      "default": "",
+      "type": "text"
+    },
+    "-": {
+      "model": "lesson",
+      "via": "course"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
