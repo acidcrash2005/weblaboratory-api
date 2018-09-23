@@ -94,6 +94,8 @@ results
 node_modules
 .node_history
 .idea/*
+admin/node_modules
+
 
 
 ############################
