@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/postscategory",
+      "handler": "Postscategory.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/postscategory/count",
+      "handler": "Postscategory.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/postscategory/:_id",
+      "handler": "Postscategory.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/postscategory",
+      "handler": "Postscategory.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/postscategory/:_id",
+      "handler": "Postscategory.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/postscategory/:_id",
+      "handler": "Postscategory.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

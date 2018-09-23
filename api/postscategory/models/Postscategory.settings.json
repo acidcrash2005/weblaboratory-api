@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "postscategory",
+  "info": {
+    "name": "postscategory",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "default": "",
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "post": {
+      "model": "post",
+      "via": "postscategories"
+    }
+  }
+}
