@@ -6,9 +6,9 @@
       "settings": {
         "client": "mongo",
         "uri": "${process.env.DATABASE_URI || ''}",
-        "host": "${process.env.DATABASE_HOST || '127.0.0.1'}",
-        "port": "${process.env.DATABASE_PORT || 1337}",
-        "database": "${process.env.DATABASE_NAME || 'strapi-production'}",
+        "host": "${process.env.DATABASE_HOST || '172.23.0.0/16'}",
+        "port": "${process.env.DATABASE_PORT || 27490}",
+        "database": "${process.env.DATABASE_NAME || 'heroku_v1pdmctq'}",
         "username": "${process.env.DATABASE_USERNAME || ''}",
         "password": "${process.env.DATABASE_PASSWORD || ''}"
       },
